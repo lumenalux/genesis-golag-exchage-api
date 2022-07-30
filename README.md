@@ -8,7 +8,7 @@ This is test task for Genesis Education. This is an API for viewing the bitcoin 
 Open the directory where you want to put the project. Open a terminal on it
 and put the command below:
 ```bash
-git clone git@github.com:<YOUR_LOGIN>/genesis-golag-exchage-api.git exchangeApi
+git clone https://github.com/lumenalux/genesis-golag-exchage-api.git exchangeApi
 ```
 
 ```bash
