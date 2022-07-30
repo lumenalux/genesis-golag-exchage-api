@@ -24,6 +24,16 @@ To run the application use the command below:
 ```bash
 docker docker run -p 8080:8081 -p 587:587 -p 80:80 exchange-api
 ```
+
+To get json with the bitcoin rate, you need to make a GET request
+at the following address: ```<YOUR DOMAIN>:8080/rate```
+
+To subscribe email, you need to make a POST request: 
+```<YOUR DOMAIN>:8080/subscribe?email=subscriber@email.com```
+
+To send emails to all subscribers, you need to make a POST request: 
+```<YOUR DOMAIN>:8080/sendEmails```
+
 ## App settings
 To use the application in full, you need to enter the settings of
 your smtp server, from which messages for subscribed emails
@@ -39,3 +49,6 @@ smtp_port: "587"
 
 api_port: "8081"
 ```
+
+## PS
+Yes.. I know that go the full name of the go language is "golang" not "golag". I just made a little mistake in the name of the repository when I did it in a hurry. Please forgive me)
