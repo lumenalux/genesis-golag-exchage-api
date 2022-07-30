@@ -162,16 +162,11 @@ func sendEmails(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "BTC to UAH exchange rate was sended")
 }
 
-func homePage(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Homepage Endpoint Hit")
-}
-
 func handleRequests() {
 	var config Conf
 	config.getConfig()
 
 	myRouter := mux.NewRouter().StrictSlash(true)
-	myRouter.HandleFunc("/", homePage)
 	myRouter.HandleFunc("/rate", rate).Methods("GET")
 	myRouter.HandleFunc("/subscribe", subscribe).Methods("POST")
 	myRouter.HandleFunc("/sendEmails", sendEmails).Methods("POST")
