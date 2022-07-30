@@ -10,9 +10,10 @@ and put the command below:
 ```bash
 git clone git@github.com:<YOUR_LOGIN>/genesis-golag-exchage-api.git exchangeApi
 ```
+
 ```bash
 cd  exchangeApi
-``
+```
 And then build docker image:
 ```bash
 docker docker build --tag exchange-api .
