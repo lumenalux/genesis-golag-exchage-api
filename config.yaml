@@ -1,0 +1,6 @@
+smtp_username: "test@domain.com"
+smtp_password: "examplepassword"
+smtp_host: "smtp.example.com"
+smtp_port: "587"
+
+api_port: "8081"
